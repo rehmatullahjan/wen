@@ -1,0 +1,303 @@
+
+/* header******************************* */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 20px;
+    height: 10vh;
+}
+
+.headingBox {
+    background-color:#6969FF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.heading {
+    margin: 10px 25px 0 0;
+    text-align: center;
+    flex-grow: 1;
+}
+/* **************************************** */
+
+/* li and a********************************** */
+ul{
+    margin: 0px;
+    padding: 5px;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+/* ************************************************** */
+
+.navbar{
+    background-color: #6969FF;
+    height: 30px;
+}
+.navbar ul li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+}
+ 
+    
+
+/* li :hover{
+   cursor:pointer ;
+ 
+} */
+ 
+
+
+*****************menu***************************
+li{
+    color:rgb(255, 255, 255);
+}
+.menu{
+  
+    max-width: 40%;
+    background-color: #6969FF;
+    color: white;
+    height: 70vh; 
+
+    
+}
+.menu ul li a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    
+
+}
+li{
+  
+    margin: 12px;
+    font-size: 14px;
+  
+}
+.menu li:first-child {
+     margin-top: 0px;
+     padding-top: 8px;
+}
+
+
+
+
+
+/* Default styles */
+.navbar {
+    display: block;
+}
+
+.menu {
+    display: none;
+}
+
+/* Media query for screens with max-width of 500px */
+@media (max-width: 500px) {
+    .navbar {
+        display: none; /* Hide the navbar */
+    }
+
+    .menu {
+        display: block; /* Show the menu */
+    }
+
+    #hamburger {
+        display: block; /* Show the hamburger icon */
+    }
+    
+    .heading {
+        font-size: 2.5rem; /* Using rem for relative sizing */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Using rem for relative sizing */
+    }
+}
+
+/* Media query for screens with min-width of 501px */
+@media (min-width: 501px) {
+    .menu {
+        display: none; /* Hide the menu */
+    }
+
+    #hamburger {
+        display: none; /* Hide the hamburger icon */
+    }
+}
+
+#hamburger {
+    height: 25px; /* Example smaller height */
+    width: 25px; /* Example smaller width */
+    margin-left: 20px; /* Add some space between the hamburger icon and the heading */
+    order: -1; /* Move the hamburger icon to the beginning (left side) */
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+/* *******************main content************************** */
+/* Styles applied when screen size is greater than 500px */
+/* @media screen and (min-width: 500px) { */
+    /* .container {
+        height: 100vh;
+        margin: 100px;
+        border: 2px solid black;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        max-width: 500px; 
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .box {
+        flex: 1 1 auto;
+        margin: 5px;
+        background-color: #f0f0f0;
+        border: 1px solid #999;
+        box-sizing: border-box; 
+    }
+
+    .box p {
+        background-color: #ccc;
+        text-align: center;
+        margin: 0;
+        padding: calc(var(--padding-factor, 5) * 1vw); 
+        flex-grow: 1;
+        max-width: calc(100% - 2 * calc(var(--padding-factor, 5) * 1vw));
+    }
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    flex: 1 0 50%; 
+    height: 33.33%; 
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+@media screen and (min-width: 501px) {
+    .container {
+        height: 100vh;
+        margin: 100px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .box {
+        flex: 1 1 auto;
+        margin: 5px;
+        background-color: #f0f0f0;
+        border: 1px solid #999;
+        box-sizing: border-box;
+    }
+
+    .box p {
+        background-color: #ccc;
+        text-align: center;
+        margin: 0;
+        padding: calc(var(--padding-factor, 5) * 1vw);
+        flex-grow: 1;
+        max-width: calc(100% - 2 * calc(var(--padding-factor, 5) * 1vw));
+    }
+} */
+
+.container{
+    /* border: 2px solid black; */
+    margin-top: 100px;
+}
+.box{
+    
+    max-width:100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+p{
+    /* border: 2px solid black; */
+    color: white;
+    margin: 0px;
+    padding: 8vh;
+    flex: 1 1 100px; /* Flex-grow: 1; Flex-shrink: 1; Flex-basis: 200px; */
+    box-sizing: border-box;  
+    
+  
+}
+/* coloring each boxe */
+
+p:nth-child(1) { background-color: rgb(0, 196, 204) } /* Light Red */
+p:nth-child(2) { background-color: rgb(255, 115, 142) } /* Light Blue */
+p:nth-child(3) { background-color: rgb(165, 72, 255) } /* Light Green */
+p:nth-child(4) { background-color: rgb(255, 165, 59) } /* Light Orange */
+p:nth-child(5) { background-color: rgb(100, 34, 184)} /* Light Purple */
+p:nth-child(6) { background-color: rgb(255, 217, 59) } /* Light Orange */
+p:nth-child(7) { background-color: rgb(255, 0, 0)} /* Light Purple */
+p:nth-child(8) { background-color: rgb(31, 226, 119)} /* Light Purple */
+p:nth-child(9) { background-color: rgb(31, 132, 226)} /* Light Purple */
+
+
+.gif {
+    max-width: 45px; /* Smaller size for the GIFs */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+
+
+
