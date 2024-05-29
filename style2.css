@@ -169,9 +169,10 @@ li{
 
 
 /* *******************main content************************** */
-/* Styles applied when screen size is greater than 500px */
-/* @media screen and (min-width: 500px) { */
-    /* .container {
+/*Styles applied when screen size is greater than 500px */
+
+ @media screen and (min-width: 500px) { 
+     .container {
         height: 100vh;
         margin: 100px;
         border: 2px solid black;
@@ -254,12 +255,13 @@ li{
         flex-grow: 1;
         max-width: calc(100% - 2 * calc(var(--padding-factor, 5) * 1vw));
     }
-} */
+}
 
 .container{
     /* border: 2px solid black; */
     margin-top: 100px;
 }
+
 .box{
     
     max-width:100%;

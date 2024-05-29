@@ -1,27 +1,4 @@
 
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const hamburger = document.getElementById('hamburger');
-//     const menu = document.querySelector('.menu');
-
-    
-//     const isMenuOpen = localStorage.getItem('isMenuOpen');
-//     if (isMenuOpen === 'true') {
-//         menu.style.display = 'none';
-//     }
-
-//     hamburger.addEventListener('click', () => {
-     
-//         if (menu.style.display === 'block') {
-//             menu.style.display = 'none'; 
-//             localStorage.setItem('isMenuOpen', 'false'); 
-//         } else {
-//             menu.style.display = 'block';
-//             localStorage.setItem('isMenuOpen', 'true'); 
-//         }
-//     });
-// });
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const menu = document.querySelector('.menu');
@@ -64,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var menuItems = document.querySelectorAll(".menu li");
+    var menuItems = document.querySelectorAll(".box p");
     menuItems.forEach(function(menuItem) {
       menuItem.addEventListener("click", function() {
         var text = menuItem.textContent.toLowerCase().replace(/\s+/g, '-');
